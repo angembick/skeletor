@@ -9,10 +9,11 @@ Setup:
 	# export WWW_SERVER_URL=http://ip.add.re.ss:5000
 	# export API_URL=http://ip.add.re.ss:3000
 	# export MOBILE_SERVER_URL=http://ip.add.re.ss:5000
-	# pip install requirements.txt
+	# sudo pip install -r requirements.txt
 	# npm install
 	# cd mobileapp
 		# npm install
+		# cordova add platform <platform eg. ios>
 		# cordova prepare
 
 
@@ -20,10 +21,12 @@ Setup:
 Running Locally:
 	API Server (port 3000):
 		# python -m api.server
+			(it may be necessary to reinstall packages with -upgrade)
 	Web Server (port 5000):
 		# node web.js
 	Mobile App Debug Server (port 4000):
 		# node mobile.js
+	Navigate to http://localhost:5000/#/landing
 
 
 Running Tests:
